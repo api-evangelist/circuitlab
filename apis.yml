@@ -1,8 +1,30 @@
 aid: circuitlab
 name: CircuitLab
-description: CircuitLab is a company surfaced as a portfolio company of a16z, y-combinator and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  CircuitLab, Inc. is an in-browser schematic capture and circuit simulation
+  platform that lets engineers, students, educators, and hobbyists design and
+  analyze analog and digital electronics systems before building a physical
+  prototype. Running entirely in the browser with no installation, it offers
+  schematic capture, mixed-signal SPICE-style simulation (DC, AC, transient,
+  frequency-domain), custom device models and symbols, expression-based
+  parameters, and shareable, exportable documentation. CircuitLab also publishes
+  an electronics curriculum (CircuitLab Academy, the Ultimate Electronics
+  textbook), community forums, and an electronics Q&A. It was surfaced as a
+  portfolio company of a16z and Y Combinator. At the time of this enrichment
+  pass CircuitLab publishes no public developer API, SDKs, or machine-readable
+  API description, so this profile captures its public web identity only.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.circuitlab.com/assets/images/og_logo.png
 url: https://raw.githubusercontent.com/api-evangelist/circuitlab/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,14 +33,46 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment-note: >-
+  No public API surface found (no OpenAPI/AsyncAPI/GraphQL, no /.well-known/*,
+  no llms.txt, no SDKs/CLI). Enriched to web-identity + domain-security only.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Electronics
+- Circuit Simulation
+- Schematic Capture
+- EDA
+- Simulation
+- Engineering
+- Education
 apis: []
+common:
+- type: DomainSecurity
+  url: security/circuitlab-domain-security.yml
+- type: Website
+  url: https://www.circuitlab.com/
+- type: Documentation
+  url: https://www.circuitlab.com/docs/
+- type: Support
+  url: https://www.circuitlab.com/forums/
+- type: Blog
+  url: https://www.circuitlab.com/blog/
+- type: Pricing
+  url: https://www.circuitlab.com/accounts/upgrade/
+- type: TermsOfService
+  url: https://www.circuitlab.com/legal/
+- type: PrivacyPolicy
+  url: https://www.circuitlab.com/legal/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
