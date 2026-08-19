@@ -36,7 +36,7 @@ x-tier-reason: portfolio-lead
 x-enrichment-note: >-
   No public API surface found (no OpenAPI/AsyncAPI/GraphQL, no /.well-known/*,
   no llms.txt, no SDKs/CLI). Enriched to web-identity + domain-security only.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 tags:
